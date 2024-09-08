@@ -2,10 +2,10 @@
     <x-slot:heading>
         Jobs Page
     </x-slot:heading>
-    <h1>Jobs Page</h1>
+
     <ul>
     @foreach ($jobs as $job)
-        <li>
+        <li class="text-lg text-blue-500 hover:text-blue-950">
             <a href="/jobs/{{ $job['id'] }}">
             {{ $job['title'] }}: pays {{ $job['salary'] }} per year.
             </a>

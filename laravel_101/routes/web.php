@@ -9,9 +9,7 @@ Route::get('/', function () {
 });
 
 Route::get("/jobs", function () {
-    return view('jobs', [
-        'jobs' => Jobs::all()
-    ]);
+    return view('jobs', ['jobs' => Jobs::all()]);
 });
 
 Route::get("/jobs/{id}", function ($id) {
